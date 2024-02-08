@@ -30,7 +30,7 @@
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-    background-image: url('assets/hero-bg.webp');
+    background-image: url('assets/hero-bg.jpg');
     background-repeat: no-repeat;
     background-position: 50% calc(50% + 85px);
     background-size: cover;
