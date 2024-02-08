@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maniac - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body style="margin: 0;">
+    <header class="header">
+        <a href="index.html" id="img-link">
+            <img src="assets/TEXT-WHITE.svg" alt="logo" id="header-logo">
+        </a>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>REDEFINING<br/>ARTISTRY.</h1>
+            <p>Building the future of</br>Electronic Music - Today.</p>
+            <a href="#" class="hero-cta">Learn More</a>
+        </div>
+    </section>
+    <section class="vision-statement">
+        <div class="vision-statement-content">
+            <h1>A <span style="color: #59CBE8;">Revolution</span> is Taking Place</h1>
+            <h2>And we're shaping it.</h2>
+            <p>Here at Maniac, we don't just promote music; we <b>elevate artists</b>. At Maniac, we're more than a label — we're dedicated collaborators, supporting artists in honing their unique vision and amplifying their impact. Beyond releasing, and promoting, we believe in cultivating an experience. It's about pushing boundaries, crafting musical landscapes, and immersing your audience in a journey that transcends the ordinary. Join us in the pursuit of musical innovation, where artistry is not just a process; it's an experience. </p>
+        </div>
+        <div class="vision-statement-filler">
+        </div>
+    </section>
+    <section class="artists">
+        <div class="artists-content">
+            <h1>Meet our Artists</h1>
+            <div class="artist-grid">
+                <div class="artist-grid-element double-size"><img src="assets/artists/kordhell.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/2W6WP4pHQTFlbr2z9S4n54" target="_blank">Kordhell</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/nxvamane.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/4f0duKhSmQubrgvVjUAKvh" target="_blank">NXVAMANE</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/ariis.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/09cKncAQn28NqTUORLMwSR" target="_blank">Ariis</a></p></div>
+                <div class="artist-grid-element double-width"><img src="assets/artists/shonci.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/0PDEn6fqo7VEhexzDok9Dl" target="_blank">shonci</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/chyl.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/15HOfHbNWedCAcJ3Cm1mbc" target="_blank">CHYL</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/grioten.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/2UM0Qcw48WXGm5kN5hgpqt" target="_blank">Grioten</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/hxi.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/3yRqd6IO6SamMAmnXwZKeU" target="_blank">HXI</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/yungzime.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/3iG3DOwDRNNcU4SD26P0qp" target="_blank">Yung Zime</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/illxsion.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/1hTmnnajpUWBkxJeiwmZWn" target="_blank">ILLXSION</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/trihoof.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/3kGqe1Ee8nPrG73XvBtuSX" target="_blank">Trihoof</a></p></div>
+                <div class="artist-grid-element"><img src="assets/artists/unnxmed.jpg" alt="Artist Image"><p><a href="https://open.spotify.com/artist/5TfBkWXNbjeaLGuk9AkK6v" target="_blank">UNNXMED</a></p></div>                
+            </div>
+        </div>
+    </section>
+</body>

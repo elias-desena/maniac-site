@@ -1,0 +1,249 @@
+.body{
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    align-content: center;
+    padding: 30px;
+    height: 85px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 40px;
+    margin: 0;
+    position: fixed;
+}
+
+.header #img-link {
+    height: 100%;
+    width: fit-content;
+}
+
+.header #header-logo {
+    height: 100%;
+}
+
+.hero {
+    padding-top: 85px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url('assets/hero-bg.webp');
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 85px);
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    flex-direction: column;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'mont-heavy'; /* Choose a name for your font */
+    src: url('assets/mont-heavy.otf') format('otf'); /* Adjust the path and format if needed */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.hero-content h1 {
+    font-family: 'mont-heavy', sans-serif; 
+    font-size: 120px;
+    color: #fff;
+    line-height: 128px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 
+    0 0 32px rgba(255, 255, 255, 0.3),
+    0 0 18px rgba(255, 255, 255, 0.3);
+}
+
+.hero-content p {
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 5px;
+    text-shadow: 
+    0 0 9px rgba(255, 255, 255, 0.25),
+    0 0 18px rgba(255, 255, 255, 0.25);
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    display: inline-block;
+    padding: 18px 24px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    width: fit-content;
+    letter-spacing: 4px;
+    font-size: 20px;
+    transition: all 0.3s;
+    border: 2px solid #fff;
+    text-shadow:
+    0 0 24px #fff,
+    0 0 14px #fff;
+}
+
+.hero-cta:hover {
+    box-shadow: 
+    0 0 24px rgba(255, 255, 255, 0.5),
+    inset 0 0 24px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.vision-statement {
+    box-sizing: border-box;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    background-color: #111;
+    padding: 80px 120px;
+    flex-direction: row;
+    
+}
+
+.vision-statement-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    color: white;
+    width: calc(61.8% - 20px);
+    margin-right: 40px;
+}
+
+.vision-statement-filler {
+    width: calc(38.2% - 20px);
+    background-image: url('assets/wavy.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    line-break: normal;
+    color: #fff;
+    margin: 0px;
+    font-size: 75px;
+    line-height: 75px;
+    font-family: 'mont-heavy', sans-serif; 
+    margin-bottom: 24px;
+}
+
+h2 {
+    margin-top: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+p {
+    margin-top: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 150%;
+    margin-bottom: 0px;
+}
+
+.artists {
+    box-sizing: border-box;
+    display: inline-flex;
+    height: max-content;
+    width: 100%;
+    background-color: #111;
+    padding: 48px 120px;
+    
+}
+
+.artists-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    color: white;
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.artist-grid-element {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc((100vw - 240px) / 6 - 10px);
+}
+
+.artist-grid-element img {
+    width: 100%;
+}
+
+.artist-grid-element p {
+    opacity: 0;
+    display: flex;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    text-shadow: 
+    0 0 10px #000,
+    0 0 5px #000;
+    height: calc((100vw - 240px) / 6 - 10px);
+    width: calc((100vw - 240px) / 6 - 10px);;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+}
+
+.artist-grid-element.double-size {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: calc((100vw - 240px) / 6 * 2 - 10px);
+}
+
+.artist-grid-element.double-size p {
+    height: calc((100vw - 240px) / 6 * 2 - 10px);
+    width: calc((100vw - 240px) / 6 * 2 - 10px);
+    font-size: 32px;
+}
+
+.artist-grid-element.double-width {
+    grid-column: span 2;  /* Takes up two columns */
+}
+
+.artist-grid-element.double-width p {
+    height: calc((100vw - 240px) / 6 - 10px);;
+    width: calc((100vw - 240px) / 6 * 2 - 10px);
+    font-size: 32px;
+}
+
+.artist-grid-element p:hover {
+    opacity: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
